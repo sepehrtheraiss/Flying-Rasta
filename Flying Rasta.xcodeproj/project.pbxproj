@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		33964BF21D24C73D00AEB9EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33964BF11D24C73D00AEB9EE /* AppDelegate.swift */; };
+		33964BF41D24C73E00AEB9EE /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 33964BF31D24C73E00AEB9EE /* GameScene.sks */; };
+		33964BF61D24C73E00AEB9EE /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33964BF51D24C73E00AEB9EE /* GameScene.swift */; };
+		33964BF81D24C73E00AEB9EE /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33964BF71D24C73E00AEB9EE /* GameViewController.swift */; };
+		33964BFB1D24C73E00AEB9EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33964BF91D24C73E00AEB9EE /* Main.storyboard */; };
+		33964BFD1D24C73E00AEB9EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33964BFC1D24C73E00AEB9EE /* Assets.xcassets */; };
+		33964C0B1D24C73E00AEB9EE /* Flying_RastaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33964C0A1D24C73E00AEB9EE /* Flying_RastaTests.swift */; };
+		33964C161D24C73E00AEB9EE /* Flying_RastaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33964C151D24C73E00AEB9EE /* Flying_RastaUITests.swift */; };
+		33964C241D24C79600AEB9EE /* Sprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33964C231D24C79600AEB9EE /* Sprite.swift */; };
+		33964C261D24C7AD00AEB9EE /* Sprite_Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33964C251D24C7AD00AEB9EE /* Sprite_Protocol.swift */; };
+		33964C2A1D24C80700AEB9EE /* jump_up.wav in Resources */ = {isa = PBXBuildFile; fileRef = 33964C291D24C80700AEB9EE /* jump_up.wav */; };
+		33964C2C1D24C81B00AEB9EE /* pickup_coconut.wav in Resources */ = {isa = PBXBuildFile; fileRef = 33964C2B1D24C81B00AEB9EE /* pickup_coconut.wav */; };
+		33964C2E1D24C82D00AEB9EE /* psytrance-djembe-loops-05.wav in Resources */ = {isa = PBXBuildFile; fileRef = 33964C2D1D24C82D00AEB9EE /* psytrance-djembe-loops-05.wav */; };
+		33964C301D24C83900AEB9EE /* hit_hurt.wav in Resources */ = {isa = PBXBuildFile; fileRef = 33964C2F1D24C83900AEB9EE /* hit_hurt.wav */; };
+		33FCC1BA1D24CCB000FA8BB2 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33FCC1B91D24CCB000FA8BB2 /* Launch Screen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		33964C071D24C73E00AEB9EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33964BE61D24C73D00AEB9EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33964BED1D24C73D00AEB9EE;
+			remoteInfo = "Flying Rasta";
+		};
+		33964C121D24C73E00AEB9EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33964BE61D24C73D00AEB9EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33964BED1D24C73D00AEB9EE;
+			remoteInfo = "Flying Rasta";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		33964BEE1D24C73D00AEB9EE /* Flying Rasta-development.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flying Rasta-development.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		33964BF11D24C73D00AEB9EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		33964BF31D24C73E00AEB9EE /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		33964BF51D24C73E00AEB9EE /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		33964BF71D24C73E00AEB9EE /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		33964BFA1D24C73E00AEB9EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		33964BFC1D24C73E00AEB9EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "Flying Rasta/Assets.xcassets"; sourceTree = "<group>"; };
+		33964C011D24C73E00AEB9EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33964C061D24C73E00AEB9EE /* Flying Rasta-development.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Flying Rasta-development.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		33964C0A1D24C73E00AEB9EE /* Flying_RastaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flying_RastaTests.swift; sourceTree = "<group>"; };
+		33964C0C1D24C73E00AEB9EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33964C111D24C73E00AEB9EE /* Flying Rasta-development.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Flying Rasta-development.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		33964C151D24C73E00AEB9EE /* Flying_RastaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flying_RastaUITests.swift; sourceTree = "<group>"; };
+		33964C171D24C73E00AEB9EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33964C231D24C79600AEB9EE /* Sprite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sprite.swift; sourceTree = "<group>"; };
+		33964C251D24C7AD00AEB9EE /* Sprite_Protocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sprite_Protocol.swift; sourceTree = "<group>"; };
+		33964C291D24C80700AEB9EE /* jump_up.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = jump_up.wav; path = ../../../Downloads/jump_up.wav; sourceTree = "<group>"; };
+		33964C2B1D24C81B00AEB9EE /* pickup_coconut.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = pickup_coconut.wav; path = ../../../Downloads/pickup_coconut.wav; sourceTree = "<group>"; };
+		33964C2D1D24C82D00AEB9EE /* psytrance-djembe-loops-05.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "psytrance-djembe-loops-05.wav"; path = "../../../Downloads/psytrance-djembe-loops-05.wav"; sourceTree = "<group>"; };
+		33964C2F1D24C83900AEB9EE /* hit_hurt.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = hit_hurt.wav; path = ../../../Downloads/hit_hurt.wav; sourceTree = "<group>"; };
+		33FCC1B91D24CCB000FA8BB2 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		33964BEB1D24C73D00AEB9EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33964C031D24C73E00AEB9EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33964C0E1D24C73E00AEB9EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		33964BE51D24C73D00AEB9EE = {
+			isa = PBXGroup;
+			children = (
+				33964C271D24C7CC00AEB9EE /* Media */,
+				33964BF01D24C73D00AEB9EE /* Flying Rasta */,
+				33964C091D24C73E00AEB9EE /* Flying RastaTests */,
+				33964C141D24C73E00AEB9EE /* Flying RastaUITests */,
+				33964BEF1D24C73D00AEB9EE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		33964BEF1D24C73D00AEB9EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				33964BEE1D24C73D00AEB9EE /* Flying Rasta-development.app */,
+				33964C061D24C73E00AEB9EE /* Flying Rasta-development.xctest */,
+				33964C111D24C73E00AEB9EE /* Flying Rasta-development.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		33964BF01D24C73D00AEB9EE /* Flying Rasta */ = {
+			isa = PBXGroup;
+			children = (
+				33964BF11D24C73D00AEB9EE /* AppDelegate.swift */,
+				33964BF31D24C73E00AEB9EE /* GameScene.sks */,
+				33964BF51D24C73E00AEB9EE /* GameScene.swift */,
+				33964BF71D24C73E00AEB9EE /* GameViewController.swift */,
+				33964BF91D24C73E00AEB9EE /* Main.storyboard */,
+				33964C011D24C73E00AEB9EE /* Info.plist */,
+				33964C231D24C79600AEB9EE /* Sprite.swift */,
+				33964C251D24C7AD00AEB9EE /* Sprite_Protocol.swift */,
+				33FCC1B91D24CCB000FA8BB2 /* Launch Screen.storyboard */,
+			);
+			path = "Flying Rasta";
+			sourceTree = "<group>";
+		};
+		33964C091D24C73E00AEB9EE /* Flying RastaTests */ = {
+			isa = PBXGroup;
+			children = (
+				33964C0A1D24C73E00AEB9EE /* Flying_RastaTests.swift */,
+				33964C0C1D24C73E00AEB9EE /* Info.plist */,
+			);
+			path = "Flying RastaTests";
+			sourceTree = "<group>";
+		};
+		33964C141D24C73E00AEB9EE /* Flying RastaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				33964C151D24C73E00AEB9EE /* Flying_RastaUITests.swift */,
+				33964C171D24C73E00AEB9EE /* Info.plist */,
+			);
+			path = "Flying RastaUITests";
+			sourceTree = "<group>";
+		};
+		33964C271D24C7CC00AEB9EE /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				33964BFC1D24C73E00AEB9EE /* Assets.xcassets */,
+				33964C281D24C7F200AEB9EE /* Audio */,
+			);
+			name = Media;
+			sourceTree = "<group>";
+		};
+		33964C281D24C7F200AEB9EE /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				33964C291D24C80700AEB9EE /* jump_up.wav */,
+				33964C2B1D24C81B00AEB9EE /* pickup_coconut.wav */,
+				33964C2F1D24C83900AEB9EE /* hit_hurt.wav */,
+				33964C2D1D24C82D00AEB9EE /* psytrance-djembe-loops-05.wav */,
+			);
+			name = Audio;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		33964BED1D24C73D00AEB9EE /* Flying Rasta-development */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33964C1A1D24C73E00AEB9EE /* Build configuration list for PBXNativeTarget "Flying Rasta-development" */;
+			buildPhases = (
+				33964BEA1D24C73D00AEB9EE /* Sources */,
+				33964BEB1D24C73D00AEB9EE /* Frameworks */,
+				33964BEC1D24C73D00AEB9EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Flying Rasta-development";
+			productName = "Flying Rasta";
+			productReference = 33964BEE1D24C73D00AEB9EE /* Flying Rasta-development.app */;
+			productType = "com.apple.product-type.application";
+		};
+		33964C051D24C73E00AEB9EE /* Flying Rasta-developmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33964C1D1D24C73E00AEB9EE /* Build configuration list for PBXNativeTarget "Flying Rasta-developmentTests" */;
+			buildPhases = (
+				33964C021D24C73E00AEB9EE /* Sources */,
+				33964C031D24C73E00AEB9EE /* Frameworks */,
+				33964C041D24C73E00AEB9EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				33964C081D24C73E00AEB9EE /* PBXTargetDependency */,
+			);
+			name = "Flying Rasta-developmentTests";
+			productName = "Flying RastaTests";
+			productReference = 33964C061D24C73E00AEB9EE /* Flying Rasta-development.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		33964C101D24C73E00AEB9EE /* Flying Rasta-developmentUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33964C201D24C73E00AEB9EE /* Build configuration list for PBXNativeTarget "Flying Rasta-developmentUITests" */;
+			buildPhases = (
+				33964C0D1D24C73E00AEB9EE /* Sources */,
+				33964C0E1D24C73E00AEB9EE /* Frameworks */,
+				33964C0F1D24C73E00AEB9EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				33964C131D24C73E00AEB9EE /* PBXTargetDependency */,
+			);
+			name = "Flying Rasta-developmentUITests";
+			productName = "Flying RastaUITests";
+			productReference = 33964C111D24C73E00AEB9EE /* Flying Rasta-development.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		33964BE61D24C73D00AEB9EE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = SkyBoss;
+				TargetAttributes = {
+					33964BED1D24C73D00AEB9EE = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = Z3Y43SUL52;
+					};
+					33964C051D24C73E00AEB9EE = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 33964BED1D24C73D00AEB9EE;
+					};
+					33964C101D24C73E00AEB9EE = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 33964BED1D24C73D00AEB9EE;
+					};
+				};
+			};
+			buildConfigurationList = 33964BE91D24C73D00AEB9EE /* Build configuration list for PBXProject "Flying Rasta-development" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 33964BE51D24C73D00AEB9EE;
+			productRefGroup = 33964BEF1D24C73D00AEB9EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				33964BED1D24C73D00AEB9EE /* Flying Rasta-development */,
+				33964C051D24C73E00AEB9EE /* Flying Rasta-developmentTests */,
+				33964C101D24C73E00AEB9EE /* Flying Rasta-developmentUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		33964BEC1D24C73D00AEB9EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33964BF41D24C73E00AEB9EE /* GameScene.sks in Resources */,
+				33964BFD1D24C73E00AEB9EE /* Assets.xcassets in Resources */,
+				33FCC1BA1D24CCB000FA8BB2 /* Launch Screen.storyboard in Resources */,
+				33964BFB1D24C73E00AEB9EE /* Main.storyboard in Resources */,
+				33964C2C1D24C81B00AEB9EE /* pickup_coconut.wav in Resources */,
+				33964C301D24C83900AEB9EE /* hit_hurt.wav in Resources */,
+				33964C2E1D24C82D00AEB9EE /* psytrance-djembe-loops-05.wav in Resources */,
+				33964C2A1D24C80700AEB9EE /* jump_up.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33964C041D24C73E00AEB9EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33964C0F1D24C73E00AEB9EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		33964BEA1D24C73D00AEB9EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33964C261D24C7AD00AEB9EE /* Sprite_Protocol.swift in Sources */,
+				33964BF61D24C73E00AEB9EE /* GameScene.swift in Sources */,
+				33964BF81D24C73E00AEB9EE /* GameViewController.swift in Sources */,
+				33964C241D24C79600AEB9EE /* Sprite.swift in Sources */,
+				33964BF21D24C73D00AEB9EE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33964C021D24C73E00AEB9EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33964C0B1D24C73E00AEB9EE /* Flying_RastaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33964C0D1D24C73E00AEB9EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33964C161D24C73E00AEB9EE /* Flying_RastaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		33964C081D24C73E00AEB9EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 33964BED1D24C73D00AEB9EE /* Flying Rasta-development */;
+			targetProxy = 33964C071D24C73E00AEB9EE /* PBXContainerItemProxy */;
+		};
+		33964C131D24C73E00AEB9EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 33964BED1D24C73D00AEB9EE /* Flying Rasta-development */;
+			targetProxy = 33964C121D24C73E00AEB9EE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		33964BF91D24C73E00AEB9EE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33964BFA1D24C73E00AEB9EE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		33964C181D24C73E00AEB9EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		33964C191D24C73E00AEB9EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		33964C1B1D24C73E00AEB9EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Flying Rasta/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "SkyBoss.Flying-Rasta";
+				PRODUCT_NAME = "Flying Rasta-development";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		33964C1C1D24C73E00AEB9EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Flying Rasta/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "SkyBoss.Flying-Rasta";
+				PRODUCT_NAME = "Flying Rasta-development";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		33964C1E1D24C73E00AEB9EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = "Flying RastaTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "SkyBoss.Flying-RastaTests";
+				PRODUCT_NAME = "Flying Rasta-development";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Flying Rasta-development.app/Flying Rasta-development";
+			};
+			name = Debug;
+		};
+		33964C1F1D24C73E00AEB9EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Flying RastaTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "SkyBoss.Flying-RastaTests";
+				PRODUCT_NAME = "Flying Rasta-development";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Flying Rasta-development.app/Flying Rasta-development";
+			};
+			name = Release;
+		};
+		33964C211D24C73E00AEB9EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = "Flying RastaUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "SkyBoss.Flying-RastaUITests";
+				PRODUCT_NAME = "Flying Rasta-development";
+				TEST_TARGET_NAME = "Flying Rasta";
+			};
+			name = Debug;
+		};
+		33964C221D24C73E00AEB9EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Flying RastaUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "SkyBoss.Flying-RastaUITests";
+				PRODUCT_NAME = "Flying Rasta-development";
+				TEST_TARGET_NAME = "Flying Rasta";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		33964BE91D24C73D00AEB9EE /* Build configuration list for PBXProject "Flying Rasta-development" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33964C181D24C73E00AEB9EE /* Debug */,
+				33964C191D24C73E00AEB9EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33964C1A1D24C73E00AEB9EE /* Build configuration list for PBXNativeTarget "Flying Rasta-development" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33964C1B1D24C73E00AEB9EE /* Debug */,
+				33964C1C1D24C73E00AEB9EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33964C1D1D24C73E00AEB9EE /* Build configuration list for PBXNativeTarget "Flying Rasta-developmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33964C1E1D24C73E00AEB9EE /* Debug */,
+				33964C1F1D24C73E00AEB9EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33964C201D24C73E00AEB9EE /* Build configuration list for PBXNativeTarget "Flying Rasta-developmentUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33964C211D24C73E00AEB9EE /* Debug */,
+				33964C221D24C73E00AEB9EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 33964BE61D24C73D00AEB9EE /* Project object */;
+}
